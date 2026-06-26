@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activity 2 – Class and ID Selectors</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #f7f8fa;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 24px 80px;
+    }
+
+    /* ── Page label ── */
+    .page-label {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #9ba3af;
+      margin-bottom: 48px;
+    }
+
+    /* ── Card container ── */
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+      padding: 52px 56px 56px;
+      max-width: 680px;
+      width: 100%;
+    }
+
+    /* ── Required: #title – green, centered ── */
+    #title {
+      color: green;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 36px;
+    }
+
+    /* ── Decorative rule under heading ── */
+    .rule {
+      width: 48px;
+      height: 3px;
+      background: green;
+      border-radius: 2px;
+      margin: 0 auto 36px;
+      opacity: 0.3;
+    }
+
+    /* ── Required: .info – beige background, font-size 16px, padding ── */
+    .info {
+      background-color: beige;
+      font-size: 16px;
+      padding: 20px 24px;
+      color: #444;
+      line-height: 1.75;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    .info:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="page-label">Activity 2 – Class and ID Selectors</p>
+
+  <div class="card">
+
+    <h1 id="title">CSS Selectors in Action</h1>
+    <div class="rule"></div>
+
+    <p class="info">
+      An <strong>ID selector</strong> (e.g. <code>#title</code>) targets a single unique element
+      on the page. It is the most specific selector, meaning it overrides class and element rules
+      when there is a conflict. Use it for elements that appear exactly once.
+    </p>
+
+    <p class="info">
+      A <strong>class selector</strong> (e.g. <code>.info</code>) can be applied to many elements
+      at once, making it perfect for reusable styles like this beige background, 16px font size,
+      and comfortable padding applied to both paragraphs here.
+    </p>
+
+  </div>
+
+</body>
+</html>

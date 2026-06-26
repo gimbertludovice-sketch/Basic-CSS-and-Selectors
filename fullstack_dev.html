@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Stack Development</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #f7f8fa;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 24px 80px;
+    }
+
+    /* ── Page label ── */
+    .page-label {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #9ba3af;
+      margin-bottom: 48px;
+    }
+
+    /* ── Card container ── */
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+      padding: 52px 56px 56px;
+      max-width: 680px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    /* ── ID Selector: #title – green, centered ── */
+    #title {
+      color: green;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 36px;
+    }
+
+    /* ── ID Selectors: section headings ── */
+    #frontend-heading {
+      color: green;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    #backend-heading {
+      color: green;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    #database-heading {
+      color: green;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    #devops-heading {
+      color: green;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    /* ── Decorative rule under headings ── */
+    .rule {
+      width: 48px;
+      height: 3px;
+      background: green;
+      border-radius: 2px;
+      margin: 0 auto 36px;
+      opacity: 0.3;
+    }
+
+    /* ── Class Selector: .info – beige background, font-size 16px, padding ── */
+    .info {
+      background-color: beige;
+      font-size: 16px;
+      padding: 20px 24px;
+      color: #444;
+      line-height: 1.75;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    .info:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Tech badge strip ── */
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .badge {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      background: #e8f5e9;
+      color: green;
+      border: 1px solid #a5d6a7;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="page-label">Full Stack Development — Class &amp; ID Selectors</p>
+
+  <!-- ── HERO CARD ── -->
+  <div class="card">
+    <h1 id="title">Full Stack Development</h1>
+    <div class="rule"></div>
+
+    <p class="info">
+      Full stack development covers both the <strong>client-facing front end</strong> and the
+      <strong>server-side back end</strong> of a web application — plus the databases and
+      infrastructure that tie them together. A full stack developer can build and ship a complete
+      product independently.
+    </p>
+
+    <p class="info">
+      This page demonstrates real full stack concepts while applying the same CSS rules you
+      learned in Activity 2: <code>#id</code> selectors for unique green centered headings, and
+      <code>.class</code> selectors for reusable beige info blocks with 16px text and padding.
+    </p>
+  </div>
+
+  <!-- ── FRONTEND CARD ── -->
+  <div class="card">
+    <h2 id="frontend-heading">Front End</h2>
+    <div class="rule"></div>
+
+    <p class="info">
+      The front end is everything a user sees and interacts with in the browser. It is built with
+      <strong>HTML</strong> for structure, <strong>CSS</strong> for styling, and
+      <strong>JavaScript</strong> for interactivity. Modern frameworks like React, Vue, and
+      Angular make it easier to build complex, dynamic user interfaces.
+      <div class="badge-row">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React</span>
+        <span class="badge">Vue</span>
+      </div>
+    </p>
+
+    <p class="info">
+      Responsive design ensures pages look great on any screen size. Tools like Flexbox, CSS Grid,
+      and media queries let developers adapt layouts for mobile, tablet, and desktop without
+      duplicating code.
+    </p>
+  </div>
+
+  <!-- ── BACKEND CARD ── -->
+  <div class="card">
+    <h2 id="backend-heading">Back End</h2>
+    <div class="rule"></div>
+
+    <p class="info">
+      The back end runs on a server and handles business logic, authentication, and communication
+      with databases. Common languages include <strong>Node.js</strong>, <strong>Python</strong>,
+      <strong>PHP</strong>, and <strong>Java</strong>. Frameworks like Express, Django, and
+      Laravel provide structure and speed up development.
+      <div class="badge-row">
+        <span class="badge">Node.js</span>
+        <span class="badge">Python</span>
+        <span class="badge">Express</span>
+        <span class="badge">Django</span>
+        <span class="badge">REST API</span>
+      </div>
+    </p>
+
+    <p class="info">
+      APIs (Application Programming Interfaces) connect the front end to the back end. A
+      <strong>REST API</strong> sends and receives JSON data over HTTP, letting the browser
+      request only the data it needs without reloading the whole page.
+    </p>
+  </div>
+
+  <!-- ── DATABASE CARD ── -->
+  <div class="card">
+    <h2 id="database-heading">Database</h2>
+    <div class="rule"></div>
+
+    <p class="info">
+      Databases store all persistent data — user accounts, posts, orders, and more.
+      <strong>Relational databases</strong> like MySQL and PostgreSQL organize data in tables with
+      rows and columns. <strong>NoSQL databases</strong> like MongoDB store flexible, document-based
+      data that can change shape over time.
+      <div class="badge-row">
+        <span class="badge">MySQL</span>
+        <span class="badge">PostgreSQL</span>
+        <span class="badge">MongoDB</span>
+        <span class="badge">Firebase</span>
+      </div>
+    </p>
+
+    <p class="info">
+      SQL (Structured Query Language) is the standard way to interact with relational databases.
+      Commands like <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, and
+      <code>DELETE</code> let developers read and write data with precision.
+    </p>
+  </div>
+
+  <!-- ── DEVOPS CARD ── -->
+  <div class="card">
+    <h2 id="devops-heading">DevOps &amp; Deployment</h2>
+    <div class="rule"></div>
+
+    <p class="info">
+      Once an application is built, it needs to be deployed so real users can access it. Platforms
+      like <strong>Vercel</strong>, <strong>Netlify</strong>, and <strong>Railway</strong> make
+      deploying front and back end apps simple. <strong>Docker</strong> packages an app and all
+      its dependencies into a container so it runs the same anywhere.
+      <div class="badge-row">
+        <span class="badge">Docker</span>
+        <span class="badge">Vercel</span>
+        <span class="badge">Netlify</span>
+        <span class="badge">GitHub Actions</span>
+        <span class="badge">CI/CD</span>
+      </div>
+    </p>
+
+    <p class="info">
+      Version control with <strong>Git</strong> and <strong>GitHub</strong> lets teams
+      collaborate safely. CI/CD pipelines automatically test and deploy code every time a
+      developer pushes a change, reducing human error and speeding up releases.
+    </p>
+  </div>
+
+</body>
+</html>
